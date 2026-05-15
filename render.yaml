@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: sd-invoice-python-v22-working
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
